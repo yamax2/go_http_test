@@ -16,4 +16,5 @@ interaction:
     command: go
 
 provision:
-  - echo 'go'
+  - echo 'here'
+  # - go get github.com/BlueDragonX/go-log
