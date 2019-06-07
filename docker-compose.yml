@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    image: golang:$GO_IMAGE_TAG
+    command: bash
+    working_dir: /app
+    volumes:
+      - .:/app
+    expose:
+      - '9000'

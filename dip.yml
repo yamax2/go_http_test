@@ -1,0 +1,19 @@
+version: '1'
+
+environment:
+  GO_IMAGE_TAG: "1.12.5"
+
+compose:
+  files:
+    - docker-compose.yml
+
+interaction:
+  sh:
+    service: app
+
+  go:
+    service: app
+    command: go
+
+provision:
+  - echo 'go'
